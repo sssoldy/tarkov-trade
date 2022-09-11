@@ -1,0 +1,10 @@
+schema:
+  - 'schema.graphql'
+  - 'local-schema.graphql'
+documents: 'src/**/!(*.generated).{ts,tsx,graphql}'
+generates:
+  src/generated-types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node

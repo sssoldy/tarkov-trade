@@ -1,0 +1,36 @@
+fragment FleaTableRow on Item {
+  id
+  name
+  normalizedName
+  lastLowPrice
+  avg24hPrice
+  updated
+  iconLink
+  category {
+    name
+  }
+  receivedFromTasks {
+    id
+  }
+  usedInTasks {
+    id
+  }
+  bartersFor {
+    id
+  }
+  bartersUsing {
+    id
+  }
+  craftsFor {
+    id
+  }
+  craftsUsing {
+    id
+  }
+  sellFor {
+    ...FleaTableSellPrice
+  }
+  buyFor {
+    ...FleaTableBuyPrice
+  }
+}

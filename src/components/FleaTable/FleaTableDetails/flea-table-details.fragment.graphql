@@ -1,0 +1,27 @@
+fragment FleaTableDetails on Item {
+  id
+  name
+  iconLink
+  category {
+    name
+  }
+  updated
+  receivedFromTasks {
+    id
+  }
+  usedInTasks {
+    id
+  }
+  bartersFor {
+    id
+  }
+  bartersUsing {
+    id
+  }
+  craftsFor {
+    id
+  }
+  craftsUsing {
+    id
+  }
+}

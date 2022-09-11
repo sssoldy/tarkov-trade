@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+      url('./fonts/inter-v12-latin_cyrillic-regular.woff2') format('woff2'),
+      url('./fonts/inter-v12-latin_cyrillic-regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+      url('./fonts/inter-v12-latin_cyrillic-500.woff2') format('woff2'),
+      url('./fonts/inter-v12-latin_cyrillic-500.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+      url('./fonts/inter-v12-latin_cyrillic-600.woff2') format('woff2'),
+      url('./fonts/inter-v12-latin_cyrillic-600.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+      url('./fonts/inter-v12-latin_cyrillic-800.woff2') format('woff2'),
+      url('./fonts/inter-v12-latin_cyrillic-800.woff') format('woff');
+  }
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type='search']::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}

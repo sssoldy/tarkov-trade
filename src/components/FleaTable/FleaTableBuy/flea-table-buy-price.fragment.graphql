@@ -1,0 +1,23 @@
+fragment FleaTableBuyPrice on ItemPrice {
+  price
+  currency
+  priceRUB
+  vendor {
+    name
+    ...TraderPrice
+    ...FleaPrice
+  }
+}
+
+fragment TraderPrice on TraderOffer {
+  name
+  minTraderLevel
+  taskUnlock {
+    name
+  }
+}
+
+fragment FleaPrice on FleaMarket {
+  name
+  enabled
+}

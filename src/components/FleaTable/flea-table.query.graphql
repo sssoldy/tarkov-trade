@@ -1,0 +1,5 @@
+query FleaTable($name: String, $offset: Int, $limit: Int) {
+  items(name: $name, offset: $offset, limit: $limit, lang: ru) {
+    ...FleaTableRow
+  }
+}
